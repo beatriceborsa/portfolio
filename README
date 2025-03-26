@@ -1,0 +1,41 @@
+
+# Portfolio Landing Page - React + Next.js + TailwindCSS
+
+Questo è il tuo portfolio frontend professionale per mostrare e vendere template.
+
+## ✅ Funzionalità incluse
+
+- Hero section con immagine e CTA
+- Card animate con Framer Motion
+- Modalità dark/light toggle
+- Sezione "Chi sono" con contatti
+- Responsive e ottimizzato mobile
+
+## 📦 Struttura
+
+- `pages/portfolio.js` → pagina principale
+- `components/ThemeToggle.js` → dark mode
+- `components/ui/` → `Button`, `Card`
+
+## 🚀 Come usarlo
+
+1. Apri il progetto in VS Code
+2. Installa dipendenze:
+   ```
+   npm install
+   ```
+3. Avvia in locale:
+   ```
+   npm run dev
+   ```
+4. Visita `http://localhost:3000`
+
+## 🛠 Personalizzazione
+
+- Cambia email e link GitHub
+- Sostituisci le immagini in `/public`
+- Aggiungi nuovi progetti duplicando le card
+
+---
+
+Creato con ❤️
