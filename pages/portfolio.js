@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function PortfolioLandingPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white px-6 py-12">
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white px-6 py-12 transition-colors">
       <div className="flex justify-end max-w-6xl mx-auto">
         <ThemeToggle />
       </div>
@@ -24,7 +24,7 @@ export default function PortfolioLandingPage() {
         </div>
         <div className="max-w-md">
           <img
-            src="https://illustrations.popsy.co/white/web-design.svg"
+            src="/code.svg"
             alt="Mockup portfolio"
             className="w-full"
           />
@@ -41,7 +41,7 @@ export default function PortfolioLandingPage() {
         >
           <Card>
             <CardContent className="p-4">
-              <img src="/preview-saas-dashboard.png" alt="SaaS Admin Dashboard" className="rounded-xl mb-4" />
+{/*               <img src="/preview-saas-dashboard.png" alt="SaaS Admin Dashboard" className="rounded-xl mb-4" /> */}
               <h2 className="text-xl font-bold mb-2">📦 SaaS Admin Dashboard</h2>
               <div className="flex gap-2 text-xs mb-3">
                 <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">Next.js</span>
@@ -55,7 +55,7 @@ export default function PortfolioLandingPage() {
                   <Button>Live Demo</Button>
                 </a>
                 <a href="https://beaborsa.gumroad.com/l/saas-dashboard" target="_blank">
-                  <Button className="bg-gray-800 hover:bg-gray-900">Acquista</Button>
+                  <Button className="text-white px-5 py-2.5 rounded-xl shadow-md shadow-md hover:shadow-lg transition duration-300 bg-gray-500 hover:bg-gray-600 dark:bg-dark-400 dark:hover:bg-dark-500 focus:ring-gray-300">Acquista</Button>
                 </a>
               </div>
             </CardContent>
@@ -70,7 +70,7 @@ export default function PortfolioLandingPage() {
         >
           <Card>
             <CardContent className="p-4">
-              <img src="/preview-coming-soon.png" alt="Coming Soon" className="rounded-xl mb-4" />
+{/*               <img src="/preview-coming-soon.png" alt="Coming Soon" className="rounded-xl mb-4" /> */}
               <h2 className="text-xl font-bold mb-2">✨ Coming Soon</h2>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                 Nuovi template frontend in arrivo. UI moderne e riutilizzabili.
@@ -88,7 +88,7 @@ export default function PortfolioLandingPage() {
         >
           <Card>
             <CardContent className="p-4">
-              <img src="/preview-custom.png" alt="Custom Projects" className="rounded-xl mb-4" />
+{/*               <img src="/preview-custom.png" alt="Custom Projects" className="rounded-xl mb-4" /> */}
               <h2 className="text-xl font-bold mb-2">🚀 Template su misura</h2>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                 Hai bisogno di qualcosa di specifico? Scrivimi e realizziamolo insieme.
@@ -102,24 +102,33 @@ export default function PortfolioLandingPage() {
       </section>
 
       {/* About Me Section */}
-      <section id="about" className="max-w-4xl mx-auto text-center mt-24 px-6">
-        <h2 className="text-3xl font-bold mb-4">👩‍💻 Chi sono</h2>
-        <p className="text-gray-600 dark:text-gray-300 text-lg mb-4">
-          Sono una sviluppatrice frontend appassionata di UI pulite, moderne e modulari.
-          Creo template per SaaS, dashboard e landing page usando React, Next.js e TailwindCSS.
-        </p>
-        <p className="text-gray-600 dark:text-gray-300 text-lg mb-6">
-          Mi piace costruire prodotti semplici, funzionali e belli. Se hai bisogno di un template su misura, scrivimi!
-        </p>
-        <div className="flex justify-center gap-4">
-          <a href="https://github.com/tuo-username" target="_blank">
-            <Button>GitHub</Button>
-          </a>
-          <a href="mailto:yourmail@example.com">
-            <Button className="bg-gray-800 hover:bg-gray-900">Contattami</Button>
-          </a>
+      <section id="about" className="py-24 px-6 bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4">👩‍💻 Chi sono</h2>
+          <p className="text-lg leading-relaxed">
+            Sono una sviluppatrice front-end con passione per UI moderne, semplici e performanti.
+            Lavoro con <strong>React</strong>, <strong>Next.js</strong> e <strong>Tailwind CSS</strong> per creare esperienze utente coinvolgenti e responsive.
+          </p>
+          <p className="mt-4 text-md text-gray-500 dark:text-gray-400">
+            Amo trasformare idee in interfacce pulite, accessibili e pronte per la produzione.
+          </p>
         </div>
+        <section id="contact" className="py-24 px-6 text-center">
+          <div className="max-w-xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">📬 Contattami</h2>
+            <p className="text-gray-700 dark:text-gray-300 mb-6">
+              Hai un progetto? Vuoi collaborare o semplicemente fare due chiacchiere?
+            </p>
+            <a
+              href="mailto:beasofiaborsa@gmail.com"
+               className="px-5 py-2.5 bg-pink-500 text-white rounded-xl hover:bg-pink-600 dark:bg-pink-400 dark:hover:bg-pink-500 shadow-md hover:shadow-lg transition duration-300 focus:outline-none focus:ring-2 focus:ring-pink-300"
+            >
+              Scrivimi
+            </a>
+          </div>
+        </section>
       </section>
+
     </div>
   );
 }
